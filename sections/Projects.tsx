@@ -4,39 +4,39 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "AI Study Assistant",
-    description: "A conversational AI tool that helps students summarize notes, generate flashcards, and quiz themselves on any topic.",
-    tech: ["Python", "Next.js", "OpenAI API", "TailwindCSS"],
-    github: "https://github.com",
-    live: "https://example.com",
-  },
-  {
-    title: "Budget Tracker",
-    description: "A mobile-first personal finance app that visualizes spending habits and helps users set monthly savings goals.",
-    tech: ["React Native", "Firebase", "Expo", "Chart.js"],
-    github: "https://github.com",
+    title: "SimplyCare",
+    description: "AI-Powered Senior Care Navigation Platform. Winner of Dell Innovate Dash SUTD Hackathon",
+    tech: ["ReactJS", "OpenAI API", "Figma"],
+    github: null,
     live: null,
   },
   {
-    title: "Campus Event Portal",
-    description: "A web platform for students to discover, RSVP, and get reminders for campus events, built during an internship project.",
-    tech: ["Vue.js", "Node.js", "PostgreSQL", "TailwindCSS"],
-    github: "https://github.com",
-    live: "https://example.com",
-  },
-  {
-    title: "Inventory Management System",
-    description: "An enterprise-grade inventory tracking system with real-time stock updates, low-stock alerts, and supplier management.",
-    tech: ["Java", "Spring Boot", "MySQL", "React"],
-    github: "https://github.com",
+    title: "Housing Price Prediction Model",
+    description: "Multidimensional linear regression to predict resale housing prices by region",
+    tech: ["Python", "Numpy", "Pandas", "Matplotlib"],
+    github: "https://github.com/prongzzz/Housing-Price-Predictor",
     live: null,
   },
   {
-    title: "UI Component Library",
-    description: "A reusable design system and component library built for internal use, with full Storybook documentation.",
-    tech: ["React", "TypeScript", "Storybook", "SCSS"],
-    github: "https://github.com",
-    live: "https://example.com",
+    title: "Mover Service Web App",
+    description: "An end-to-end logistics web app featuring dedicated customer booking portals, employee task workflows, and managerial administration tools.",
+    tech: ["ReactJS", "javascript", "SQL"],
+    github: null,
+    live: null,
+  },
+  {
+    title: "GamersGuild",
+    description: "Android app for gamers to find other gamers to play with. Featuring swiping and messaging interfaces",
+    tech: ["Java", "Firebase", "Android", "AdobeXD"],
+    github: "https://github.com/Kayatoasttt/MyApplication",
+    live: null,
+  },
+  {
+    title: "Drug Abuse in Singapore",
+    description: "A data analysis of Drug abuse in Singapore and if rehabilitation centres' are effective",
+    tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
+    github: "https://github.com/Kayatoasttt/Drug-Abuse-in-SG",
+    live: null,
   },
 ];
 
@@ -79,7 +79,7 @@ export default function Projects() {
                 width: "420px",
                 padding: "2rem",
                 borderRadius: "24px",
-                background: "rgba(255, 255, 255, 0.06)",
+                background: "rgba(255, 255, 255, 0.14)",
                 backdropFilter: isCenter ? "blur(4px)" : "blur(2px)",
                 WebkitBackdropFilter: isCenter ? "blur(4px)" : "blur(2px)",
                 borderTop: "none",
@@ -135,15 +135,17 @@ export default function Projects() {
 
               {/* Links */}
               <div style={{ display: "flex", gap: "20px", marginTop: "auto" }}>
-                <a
-                
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: "0.75rem", color: "#6b3fa0", textDecoration: "none", letterSpacing: "0.06em", fontWeight: 500 }}
-                >
-                  GitHub →
-                </a>
+
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ fontSize: "0.75rem", color: "#6b3fa0", textDecoration: "none", letterSpacing: "0.06em", fontWeight: 500 }}
+                  >
+                    Github →
+                  </a>
+                )}
                 {project.live && (
                   <a
                     href={project.live}

@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function About() {
 
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="about" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
 
       <div className="relative z-10 text-center px-6">
         <motion.p
@@ -35,8 +35,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
         >
-          AI developer and designer crafting thoughtful digital experiences
-          at the intersection of technology and creativity.
+          Creative thinker passionate about building engaging experiences through technology and design.
+Always exploring new ways to turn ideas into reality.
         </motion.p>
       </div>
     </section>

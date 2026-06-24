@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 const contact = {
-  name: "Your Name",
-  phone: "+1 (555) 000-0000",
-  email: "you@email.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  name: "Gopinath Kavya",
+  phone: "+65 8850 8381",
+  email: "kavyagopinath23@gmail.com",
+  github: "https://github.com/Kayatoasttt",
+  linkedin: "https://linkedin.com/in/kavya-gopinath",
 };
 
 const rows = [
@@ -56,7 +56,7 @@ export default function Contact() {
               backfaceVisibility: "hidden",
               WebkitBackfaceVisibility: "hidden",
               borderRadius: "24px",
-              background: "rgba(255, 255, 255, 0.06)",
+              background: "rgba(255, 255, 255, 0.14)",
               backdropFilter: "blur(4px)",
               WebkitBackdropFilter: "blur(4px)",
               borderTop: "none",
@@ -106,9 +106,9 @@ export default function Contact() {
               {contact.name}
             </p>
 
-            <p style={{ fontSize: "0.78rem", color: "#2a1a3a", opacity: 0.55, margin: 0, letterSpacing: "0.06em" }}>
+            {/* <p style={{ fontSize: "0.78rem", color: "#2a1a3a", opacity: 0.55, margin: 0, letterSpacing: "0.06em" }}>
               Full-Stack Developer
-            </p>
+            </p> */}
 
             {/* Hint */}
             <div
@@ -187,7 +187,7 @@ export default function Contact() {
                     onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "#6b3fa0")}
                     onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "#1a1025")}
                   >
-                    {row.value} ↗
+                    {row.value}
                   </a>
                 </div>
                 {i < rows.length - 1 && (

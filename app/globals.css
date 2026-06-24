@@ -3,9 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
-  overflow: hidden;
   overflow-x: hidden;
 }
 
@@ -23,12 +26,5 @@ body {
 }
 
 section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   min-height: 100vh;
-}
-
-@keyframes shine {
-  0% { transform: translateX(-160%) skewX(-20deg); }
-  100% { transform: translateX(260%) skewX(-20deg); }
 }
